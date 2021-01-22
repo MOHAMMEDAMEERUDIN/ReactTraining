@@ -17,7 +17,7 @@ export default class ClockLifecycle extends React.Component {
   }
 
   componentWillUnmount() {
-    //clearInterval(this.timerID);
+    clearInterval(this.timerID);
   }
 
   ticktick() {
