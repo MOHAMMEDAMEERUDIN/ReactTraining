@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Styles.js';
 
-export default class Clock extends React.Component {
+export default class ClockLifecycle extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ export default class Clock extends React.Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.timerID);
+    //clearInterval(this.timerID);
   }
 
   ticktick() {
@@ -30,7 +30,7 @@ export default class Clock extends React.Component {
   render() {
     return (
       <>
-        <p style={styles.time}>Time : {this.state.timeNow.toLocaleTimeString()}</p>
+        <p style={styles.time}>Using LifeCycle: {this.state.timeNow.toLocaleTimeString()}</p>
       </>
     )
   }

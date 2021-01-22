@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import styles from './Styles.js';
-import Clock from './Clock.js';
+import ClockLifecycle from './ClockLifecycle.js';
+import ClockHook from './ClockHook.js';
 
 export default class Header extends React.Component {
   constructor() {
@@ -21,7 +22,8 @@ export default class Header extends React.Component {
         <h1 style={styles.title}>Welcome to {this.title}</h1>
         <img style={styles.icons} src={this.userUrl} />
         <div className="container"><img style={styles.icons} src={this.cartUrl} /><div className="top-right coin">12</div></div>
-        <Clock></Clock>
+        <ClockLifecycle></ClockLifecycle>
+        <ClockHook></ClockHook>
         <marquee style={styles.discount}>{this.offerDesc}</marquee>
         <hr />
       </>
