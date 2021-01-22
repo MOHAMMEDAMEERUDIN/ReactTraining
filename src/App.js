@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import products from './datas.json';
+import Header from './Header.js';
+import Result from './Result.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends React.Component {
+  constructor(props){
+    super(props);
+    
+  }
+ 
+  render(){
+    return (
+      <>
+        <Header />
+        {products.map(function(product, index){
+          return  <Result pId = {product.productId} mrpPrice ={product.mrpPrice} offerPrice ={product.offerPrice} desc ={product.desc} imageUrl={product.imageUrl}/>
+        })}
+    </>
+    );
+  }
 }
 
-export default App;
