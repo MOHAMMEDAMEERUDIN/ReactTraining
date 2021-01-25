@@ -6,11 +6,22 @@ import Result from './Result.js';
 
 
 const App =() =>{
-  useEffect(()=>{
-      fetch(
-        ''
-      )
-  });
+  //var [datas , setDatas] = useState();
+  // useEffect(()=>{
+   
+  //     fetch(
+  //       'http://10.5.5.104:8080/hmhstudents/data/shopiee/getAllProducts',
+  //       {
+  //         method : 'GET',
+  //         mode: 'no-cors'
+  //       }
+  //     )
+  //     .then(res => res.json())
+  //     .then(response => {
+  //       console.log(response);
+  //       setDatas(response);
+  //     })
+  // });
 
   return (
     <>
