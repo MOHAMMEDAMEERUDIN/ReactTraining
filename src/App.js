@@ -6,7 +6,7 @@ import Header from './Header.js';
 import Result from './Result.js';
 import axios from 'axios';
 
-/*const App =() =>{
+const App =() =>{
   return (
     <>
       <Header />
@@ -17,7 +17,7 @@ import axios from 'axios';
   );
 }
 
-export default App;*/
+export default App;
 
 
 
@@ -68,7 +68,7 @@ export default App;*/
 
 //******************************** Functional Component api call ******************************
 
-const App = () => {
+/*const App = () => {
   const [pokes, setPokes] = useState([]);
 
   useEffect(() => {
@@ -110,4 +110,4 @@ const App = () => {
       </>
   );
 };
-export default App;
+export default App;*/
