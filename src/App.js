@@ -6,7 +6,7 @@ import Header from './Header.js';
 import Result from './Result.js';
 import axios from 'axios';
 
-const App =() =>{
+/*const App =() =>{
   return (
     <>
       <Header />
@@ -17,7 +17,7 @@ const App =() =>{
   );
 }
 
-export default App;
+export default App;*/
 
 
 
@@ -52,7 +52,7 @@ export default App;
               return <>                  
                 <tr style={{border:'1px solid orange'}}>
                   <td>{index+1}</td>
-                  <td>{poke.name}</td>
+                  <td>{poke.name.toUpperCase()}</td>
                   <td><a href={poke.url}>{poke.url}</a></td>
                 </tr>
               </>
@@ -68,7 +68,7 @@ export default App;*/
 
 //******************************** Functional Component api call ******************************
 
-/*const App = () => {
+const App = () => {
   const [pokes, setPokes] = useState([]);
 
   useEffect(() => {
@@ -89,7 +89,7 @@ export default App;*/
   return (
     <>
         <Header />
-        <strong>Functional Component with useEffect() using async fetch api call</strong>
+        <strong>Functional Component with Hooks useEffect() using async fetch api call</strong>
         <table style={{width:'100%'}}>
           <tr style={{border:'2px solid red'}}>
             <th>SI No</th>
@@ -100,7 +100,7 @@ export default App;*/
               return <>                  
                 <tr style={{border:'1px solid blue'}}>
                   <td>{index+1}</td>
-                  <td>{poke.name}</td>
+                  <td>{poke.name.toUpperCase()}</td>
                   <td><a href={poke.url}>{poke.url}</a></td>
                 </tr>
               </>
@@ -110,4 +110,4 @@ export default App;*/
       </>
   );
 };
-export default App;*/
+export default App;
